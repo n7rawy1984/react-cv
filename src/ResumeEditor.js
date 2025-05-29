@@ -25,7 +25,7 @@ const CV = () => {
     I would welcome the opportunity to discuss how my skills and experience align with your needs. Thank you for your time and consideration - I look forward to the possibility of contributing to your team's success.
 
     Sincerely,
-    MOHAMED SAID NASR ZAKI ELNAHRAWY
+    MOHAMED ELNAHRAWY
   `;
 
   const cvData = {
@@ -34,10 +34,9 @@ const CV = () => {
       title:
         "Senior Accountant & Operations Manager | Digital Marketing Specialist",
       contact: {
-        email: "your.email@example.com",
+        email: "n7rawy1984@gmail.com",
         phone: "+971 XX XXX XXXX",
         location: "Dubai, UAE",
-        linkedin: "linkedin.com/in/yourprofile",
       },
     },
     summary:
@@ -191,10 +190,6 @@ const CV = () => {
             <span>
               <i className="fas fa-map-marker-alt"></i>{" "}
               {cvData.personalInfo.contact.location}
-            </span>
-            <span>
-              <i className="fab fa-linkedin"></i>{" "}
-              {cvData.personalInfo.contact.linkedin}
             </span>
           </div>
         </header>
