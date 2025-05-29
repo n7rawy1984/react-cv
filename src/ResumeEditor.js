@@ -1,38 +1,8 @@
-import React, { useState, useRef } from "react";
-import { useReactToPrint } from "react-to-print";
+import React from "react";
 import "./style.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const CV = () => {
-  const [showCoverLetter, setShowCoverLetter] = useState(false);
-  const cvRef = useRef(null);
-
-  const handleGeneratePdf = useReactToPrint({
-    content: () => cvRef.current,
-    documentTitle: "Mohamed_Said_CV",
-    removeAfterPrint: true,
-    pageStyle: `
-      @page {
-        size: A4;
-        margin: 1cm;
-      }
-      @media print {
-        body {
-          zoom: 90%;
-        }
-        .cv-container {
-          box-shadow: none;
-          padding: 0;
-          margin: 0;
-        }
-        .action-buttons {
-          display: none !important;
-        }
-      }
-    `,
-    onPrintError: () => alert("Error while printing! Please try again."),
-  });
-
   const coverLetterContent = `
     Dear Hiring Manager,
 
@@ -204,7 +174,7 @@ const CV = () => {
 
   return (
     <div className="app-container">
-      <div className="cv-container" ref={cvRef}>
+      <div className="cv-container">
         {/* Header Section */}
         <header className="cv-header">
           <h1>{cvData.personalInfo.name}</h1>
@@ -229,35 +199,15 @@ const CV = () => {
           </div>
         </header>
 
-        {/* Buttons */}
-        <div className="action-buttons">
-          <button className="pdf-button" onClick={handleGeneratePdf}>
-            <i className="fas fa-file-pdf"></i> Generate PDF
-          </button>
-          <button
-            className="cover-letter-toggle"
-            onClick={() => setShowCoverLetter(!showCoverLetter)}
-          >
-            {showCoverLetter ? (
-              <i className="fas fa-eye-slash"></i>
-            ) : (
-              <i className="fas fa-eye"></i>
-            )}{" "}
-            {showCoverLetter ? "Hide Cover Letter" : "Show Cover Letter"}
-          </button>
-        </div>
-
         {/* Cover Letter */}
-        {showCoverLetter && (
-          <section className="cv-section cover-letter">
-            <h3>COVER LETTER</h3>
-            <div className="cover-letter-content">
-              {cvData.coverLetter.split("\n").map((paragraph, index) => (
-                <p key={index}>{paragraph}</p>
-              ))}
-            </div>
-          </section>
-        )}
+        <section className="cv-section cover-letter">
+          <h3>COVER LETTER</h3>
+          <div className="cover-letter-content">
+            {cvData.coverLetter.split("\n").map((paragraph, index) => (
+              <p key={index}>{paragraph}</p>
+            ))}
+          </div>
+        </section>
 
         {/* Professional Summary */}
         <section className="cv-section">
