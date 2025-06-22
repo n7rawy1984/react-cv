@@ -35,7 +35,7 @@ const CV_Combined_ModerateExperience = () => {
         "Versatile Professional: Accounting, Data Entry, Warehouse Support & AI Tools Enthusiast",
       contact: {
         email: "n7rawy1984@gmail.com",
-        phone: "+971 XX XXX XXXX",
+        phone: "+971 ________________ ",
         location: "Dubai, UAE",
       },
     },
