@@ -1,11 +1,8 @@
-// src/CV.js (أو src/ResumeEditor.js)
 import React from "react";
 import "./style.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import html2pdf from "html2pdf.js"; // استيراد المكتبة
 
 const CV_Combined_ModerateExperience = () => {
-  // ... (كل محتوى cvData والـ coverLetterContent زي ما هو بدون تغيير) ...
   const coverLetterContent = `
     Dear Hiring Manager,
 
@@ -96,7 +93,7 @@ const CV_Combined_ModerateExperience = () => {
         period: "2013 - 2015",
         location: "Dubai, UAE",
         achievements: [
-          "Handled **barcode system operations for accurate data capture** within a trading company.",
+          "Handled **barcode system operations for product tracking**, focusing on data accuracy.",
           "Contributed to **processing purchase orders and sales invoices**, ensuring correct data input.",
           "Assisted in reconciling inventory records with physical counts.",
           "Supported the team in preparing **basic financial data for reporting**.",
@@ -159,32 +156,8 @@ const CV_Combined_ModerateExperience = () => {
     coverLetter: coverLetterContent,
   };
 
-  // الدالة الجديدة لتحويل الـ CV إلى PDF وتحميله
-  const handleDownloadPdf = () => {
-    const element = document.querySelector(".cv-container"); // ده السليكتور لأي جزء في الـ HTML عايز تحوله لـ PDF
-
-    // إعدادات الـ PDF
-    const opt = {
-      margin: 0.5, // الهوامش بالبوصة
-      filename: `${cvData.personalInfo.name.replace(/ /g, "_")}_CV.pdf`, // اسم الملف هيتبدل بالاسم بتاعك
-      image: { type: "jpeg", quality: 0.98 },
-      html2canvas: { scale: 2, logging: true, dpi: 192, letterRendering: true },
-      jsPDF: { unit: "in", format: "letter", orientation: "portrait" }, // Letter size, عمودي
-    };
-
-    // تنفيذ التحويل والتحميل
-    html2pdf().set(opt).from(element).save();
-  };
-
   return (
     <div className="app-container">
-      {/* زر التحميل الجديد هيكون هنا */}
-      <div className="download-button-container">
-        <button onClick={handleDownloadPdf} className="download-pdf-button">
-          <i className="fas fa-download"></i> تحميل السيرة الذاتية (PDF)
-        </button>
-      </div>
-
       <div className="cv-container">
         {/* Header Section */}
         <header className="cv-header">
