@@ -2,27 +2,27 @@ import React from "react";
 import "./style.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
-const CV_Combined_ModerateExperience = () => {
+const CV = () => {
   const coverLetterContent = `
     Dear Hiring Manager,
 
-    I am writing to express my interest in opportunities where I can apply my combined skills in **accounting, data management, and operational support**. With over 15 years of practical experience, I have developed a solid foundation in **financial record-keeping, efficient data entry, and basic inventory control**. I am also keen on integrating modern tools, including **AI applications, to enhance productivity**.
+    I am pleased to submit my application for consideration. With over 15 years of progressive experience in accounting, operations management, and logistics, complemented by expertise in digital marketing and AI tools, I am confident in my ability to contribute significantly to your organization.
 
-    My diverse background has provided me with:
-    - **Competence in handling financial transactions** and preparing basic accounting reports.
-    - Strong ability in **accurate data entry and maintaining organized digital records**.
-    - Experience in **supporting warehouse operations and inventory tracking**.
-    - A proactive approach to learning and applying **AI tools for process improvement**.
+    My professional journey has equipped me with:
+    - Comprehensive financial management skills with GCC compliance expertise
+    - Proven ability to optimize operations and implement efficiency improvements
+    - Advanced digital skills including AI tools and social media marketing
+    - Bilingual proficiency in English and Arabic
 
-    Throughout my career, I have consistently focused on maintaining accuracy in my work and supporting team objectives. For instance, I have:
-    - Contributed to **improving financial record accuracy** and data integrity.
-    - Assisted in **streamlining data entry processes** and managing information flow.
-    - Supported **inventory management tasks** which helped in reducing minor discrepancies.
-    - Explored and utilized **AI tools to assist in data analysis and content generation**.
+    Notable achievements include:
+    - Developing financial systems that improved efficiency by 30%
+    - Implementing inventory management systems that reduced discrepancies by 45%
+    - Leading digital transformation initiatives for multiple companies
+    - Growing social media engagement by 20-35% through targeted campaigns
 
-    I am a highly adaptable and eager-to-learn professional, committed to contributing to a positive and efficient work environment. I believe my versatile skill set makes me a valuable asset to your team.
+    What sets me apart is my unique combination of financial acumen, operational expertise, and digital capabilities. I thrive in challenging environments that require analytical thinking and creative problem-solving.
 
-    I would welcome the opportunity to discuss how my capabilities align with your requirements. Thank you for your time and consideration - I look forward to the possibility of contributing to your team's success.
+    I would welcome the opportunity to discuss how my skills and experience align with your needs. Thank you for your time and consideration - I look forward to the possibility of contributing to your team's success.
 
     Sincerely,
     MOHAMED ELNAHRAWY
@@ -32,15 +32,15 @@ const CV_Combined_ModerateExperience = () => {
     personalInfo: {
       name: "MOHAMED SAID NASR ZAKI ELNAHRAWY",
       title:
-        "Versatile Professional: Accounting, Data Entry, Warehouse Support & AI Tools Enthusiast",
+        "Senior Accountant & Operations Manager | Digital Marketing Specialist",
       contact: {
         email: "n7rawy1984@gmail.com",
-        phone: "+971 ________________ ",
+        phone: "+971 XX XXX XXXX",
         location: "Dubai, UAE",
       },
     },
     summary:
-      "Adaptable professional with 15+ years of experience combining **accounting fundamentals, accurate data entry, and operational support in warehouse environments**. Eager to apply and expand knowledge in **AI tools for productivity enhancement**. Bilingual in English and Arabic, with a focus on attention to detail and process support.",
+      "Results-driven professional with 15+ years of experience in accounting, operations management, and logistics. Combines financial expertise with digital skills including AI tools and social media marketing. Bilingual in English and Arabic with proven ability to optimize processes and drive business improvements.",
     education: {
       degree: "Bachelor of Commerce (Accounting)",
       university: "Tanta University",
@@ -49,104 +49,119 @@ const CV_Combined_ModerateExperience = () => {
     experiences: [
       {
         id: 1,
-        role: "Freelance Accounting & Business Support",
+        role: "Freelance Accounting & Business Consultant",
         company: "Self-Employed",
         period: "2024 - Present",
         location: "Alexandria, Egypt",
         achievements: [
-          "Provided **accounting assistance** to small businesses, focusing on record-keeping and data input.",
-          "Supported clients in organizing financial data for reporting purposes.",
-          "Offered basic business advisory, often involving **data organization and tracking**.",
-          "Utilized **AI tools to assist in market research and content drafting** for clients.",
+          "Provided accounting services to Egyptian small and medium businesses",
+          "Developed financial reporting systems tailored to client needs",
+          "Implemented cost-saving measures averaging 15-20% reduction in operational costs",
+          "Offered business advisory services to improve financial processes",
         ],
       },
       {
         id: 2,
-        role: "Online Sales & Warehouse Support",
+        role: "Online Sales Manager & Warehouse Manager",
         company: "Al Nahda Company",
         period: "2022 - 2024",
         location: "Alexandria, Egypt",
         achievements: [
-          "Assisted in **inventory management tasks**, helping to track stock movements and counts.",
-          "Contributed to managing export documentation, focusing on **accurate data entry of shipping details**.",
-          "Helped coordinate with suppliers, ensuring timely information flow.",
-          "Participated in developing social media content, exploring **AI tools for ideas and initial drafts**.",
+          "Implemented inventory management system reducing stock discrepancies by 45%",
+          "Managed export documentation for international shipments",
+          "Coordinated with suppliers for timely deliveries",
+          "Developed social media marketing strategy increasing online sales by 35%",
         ],
       },
       {
         id: 4,
-        role: "Warehouse Operations & Logistics Assistant",
+        role: "Warehouse and Logistics Manager",
         company: "Alexandria Port",
         period: "2021 - 2022",
         location: "Alexandria, Egypt",
         achievements: [
-          "Supported **logistics operations**, helping with coordination of import/export activities.",
-          "Assisted in **maintaining inventory tracking records**, ensuring data consistency.",
-          "Helped to identify minor process improvements in shipping documentation.",
-          "Explored using **data analysis tools for basic inventory insights**.",
+          "Supervised logistics operations for import/export activities",
+          "Implemented bilingual inventory tracking system",
+          "Reduced shipping delays by 35% through process optimization",
+          "Utilized data analysis tools for demand forecasting",
         ],
       },
       {
-        id: 6,
-        role: "Accountant & Data Entry Assistant",
-        company: "Ansar Group",
-        period: "2013 - 2015",
-        location: "Dubai, UAE",
+        id: 3,
+        role: "Personnel Affairs and Recruitment Officer",
+        company: "Al-Qafei Recruitment Company",
+        period: "2019 - 2020",
+        location: "Kingdom of Saudi Arabia",
         achievements: [
-          "Handled **barcode system operations for product tracking**, focusing on data accuracy.",
-          "Contributed to **processing purchase orders and sales invoices**, ensuring correct data input.",
-          "Assisted in reconciling inventory records with physical counts.",
-          "Supported the team in preparing **basic financial data for reporting**.",
+          "Managed recruitment processes for regional markets",
+          "Handled employee documentation compliant with labor laws",
+          "Coordinated visa processing for international positions",
+          "Implemented efficient candidate screening system",
         ],
       },
       {
         id: 5,
-        role: "Accountant & Store Keeper Assistant",
+        role: "Accountant & Store Keeper",
         company: "Al-Helal Company for Medical Supplies",
         period: "2016 - 2018",
         location: "Alexandria, Egypt",
         achievements: [
-          "Assisted in **managing inventory for medical equipment**, focusing on stock organization and data entry.",
-          "Supported the accounting team in **data input for financial transactions**.",
-          "Helped prepare basic financial summaries.",
-          "Contributed to maintaining the company's digital presence through data updates.",
+          "Managed inventory for medical equipment",
+          "Implemented accounting system for regional compliance",
+          "Prepared financial reports meeting international standards",
+          "Managed company's digital presence and brand awareness",
+        ],
+      },
+      {
+        id: 6,
+        role: "Accountant & Data Entry Operator",
+        company: "Ansar Group",
+        period: "2013 - 2015",
+        location: "Dubai, UAE",
+        achievements: [
+          "Managed barcode system operations for trading company",
+          "Reduced inventory discrepancies by 30% through systematic tracking",
+          "Processed purchase orders and sales invoices",
+          "Implemented bilingual reporting for government compliance",
         ],
       },
     ],
     achievements: [
-      "**Data Accuracy:** Consistently maintained high accuracy in data entry and record-keeping across various roles.",
-      "**Process Support:** Actively supported operational workflows in accounting and warehousing to enhance efficiency.",
-      "**Digital Adaptability:** Quickly learned and applied new software and tools, including initial exploration of AI functionalities.",
-      "**Organizational Skills:** Successfully managed and organized diverse sets of information and physical inventory.",
-      "**Problem-Solving:** Assisted in identifying and resolving minor data discrepancies and operational bottlenecks.",
+      "Digital Transformation: Led migration to automated accounting systems for multiple companies",
+      "Process Optimization: Reduced monthly closing time by 40% through workflow improvements",
+      "AI Implementation: Successfully integrated AI tools for financial analysis and marketing",
+      "Social Media Growth: Increased engagement by 35% through targeted content strategy",
+      "Published Author: Recognized for literary work at Cairo International Book Fair",
     ],
     skills: {
       technical: [
-        "**Financial Data Entry**",
-        "**Basic Accounting Principles**",
-        "**Inventory Tracking**",
-        "**Data Management Systems**",
-        "**MS Office Suite (Excel, Word)**",
-        "ERP System Familiarity (Microsoft Dynamics)",
-        "Barcode System Operations",
+        "Financial Reporting & Analysis",
+        "Inventory Management",
+        "ERP Systems",
+        "Microsoft Dynamics",
+        "Data Analysis",
         "ICDL Certified",
       ],
       management: [
-        "**Operational Support**",
-        "**Time Management**",
-        "**Attention to Detail**",
-        "Problem Identification",
-        "Team Collaboration",
+        "Operations Management",
+        "Team Leadership",
+        "Process Optimization",
+        "Vendor Relations",
+        "Cross-cultural Coordination",
       ],
       digital: [
-        "**AI Tools (ChatGPT, Basic AI for data tasks)**",
-        "**Digital Data Entry**",
-        "Email & Communication Tools",
-        "Internet Research",
+        "AI Tools & Automation",
+        "Social Media Marketing",
+        "Digital Advertising",
+        "Content Creation",
+        "Data Visualization",
+        "ChatGPT & AI Assistants",
       ],
       regional: [
-        "Basic GCC Regulations Understanding",
-        "Bilingual Communication (English/Arabic)",
+        "GCC Compliance",
+        "UAE VAT Regulations",
+        "Bilingual Documentation",
+        "International Standards",
       ],
     },
     languages: [
@@ -294,4 +309,4 @@ const CV_Combined_ModerateExperience = () => {
   );
 };
 
-export default CV_Combined_ModerateExperience;
+export default CV;
