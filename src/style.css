@@ -308,3 +308,37 @@ body {
   }
   /* أي تعديلات تانية للشكل عند الطباعة */
 }
+/* src/style.css */
+
+/* ... (التنسيقات القديمة موجودة زي ما هي) ... */
+
+.download-button-container {
+  text-align: center;
+  margin-bottom: 20px; /* مسافة بين الزر والـ CV */
+  padding-top: 20px; /* مسافة من فوق الصفحة */
+}
+
+.download-pdf-button {
+  background-color: #4caf50; /* لون أخضر */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  display: inline-flex; /* عشان الأيقونة والنص يبقوا جنب بعض */
+  align-items: center;
+  gap: 8px; /* مسافة بين الأيقونة والنص */
+  transition: background-color 0.3s ease;
+}
+
+.download-pdf-button:hover {
+  background-color: #45a049;
+}
+
+/* ممكن تعمل حاجة عشان الزرار ده ما يظهرش في ملف الـ PDF نفسه */
+@media print {
+  .download-button-container {
+    display: none !important;
+  }
+}
