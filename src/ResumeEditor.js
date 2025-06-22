@@ -35,7 +35,7 @@ const CV = () => {
         "Senior Accountant & Operations Manager | Digital Marketing Specialist",
       contact: {
         email: "n7rawy1984@gmail.com",
-        phone: "+971 XX XXX XXXX",
+        phone: "+971________________",
         location: "Dubai, UAE",
       },
     },
