@@ -288,3 +288,23 @@ body {
     margin-bottom: 5px;
   }
 }
+@media print {
+  /* هنا بتحط أكواد CSS اللي عايزها تتطبق بس وقت الطباعة */
+  /* مثلاً، لو فيه زرار مش عايزه يظهر في الـ PDF */
+  .no-print {
+    display: none !important;
+  }
+  /* ممكن تظبط أحجام الخطوط أو الهوامش للصفحة المطبوعة */
+  body {
+    margin: 0;
+    padding: 0;
+    -webkit-print-color-adjust: exact; /* عشان الألوان والخلفيات تظهر في الطباعة */
+  }
+  .cv-container {
+    box-shadow: none; /* إزالة الظل لو كنت حاطه */
+    border: none; /* إزالة الحدود لو كنت حاططها */
+    width: 100%; /* تظبيط العرض عشان يملى الصفحة */
+    max-width: none;
+  }
+  /* أي تعديلات تانية للشكل عند الطباعة */
+}
