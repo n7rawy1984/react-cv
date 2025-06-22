@@ -342,3 +342,198 @@ body {
     display: none !important;
   }
 }
+/* src/style.css */
+
+/* التنسيقات العامة للحاوية */
+.cv-container {
+  /* احتفظ بالتنسيقات الأساسية زي (background, border, box-shadow) */
+  width: 21cm; /* عرض ورقة A4 */
+  min-height: 29.7cm; /* ارتفاع ورقة A4 (صفحة واحدة) */
+  margin: 20px auto;
+  padding: 20px 30px; /* تقليل الـ padding شويه عشان المساحة الداخلية */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  font-family: Arial, sans-serif; /* خط أساسي وواضح */
+  line-height: 1.4; /* تقليل المسافة بين السطور قليلاً */
+  font-size: 14px; /* حجم خط مناسب للقراءة */
+}
+
+/* تنسيقات الأقسام المختلفة */
+.cv-header h1 {
+  font-size: 26px; /* تقليل حجم العنوان الرئيسي */
+  margin-bottom: 5px;
+}
+.cv-header h2 {
+  font-size: 18px; /* تقليل حجم العنوان الفرعي */
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.contact-info span {
+  font-size: 13px; /* حجم خط أصغر لبيانات الاتصال */
+  margin-right: 15px;
+  display: inline-block; /* عشان ياخدوا سطر واحد لو المساحة تسمح */
+}
+
+.cv-section {
+  margin-bottom: 15px; /* تقليل المسافة بين الأقسام */
+  padding-bottom: 10px; /* تقليل الـ padding السفلي للأقسام */
+  border-bottom: 1px solid #eee; /* ممكن تخفف الحدود أو تلغيها لو بتاخد مساحة */
+}
+
+.cv-section:last-child {
+  border-bottom: none; /* إزالة الحد السفلي لآخر قسم */
+}
+
+.cv-section h3 {
+  font-size: 16px; /* حجم أصغر للعناوين الفرعية للأقسام */
+  color: #333;
+  margin-top: 10px; /* تقليل المسافة العلوية */
+  margin-bottom: 8px; /* تقليل المسافة السفلية */
+  text-transform: uppercase;
+  border-bottom: 2px solid #ddd; /* حدود خفيفة ومسطحة */
+  padding-bottom: 4px;
+}
+
+/* الملخص والفقرات */
+.cv-section p {
+  font-size: 13px; /* حجم خط أصغر للفقرات */
+  margin-bottom: 8px;
+  line-height: 1.5; /* تحكم في ارتفاع السطر */
+}
+
+/* الخبرات */
+.experience-item {
+  margin-bottom: 10px; /* تقليل المسافة بين كل خبرة */
+}
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 14px; /* حجم خط مناسب لعناوين الخبرات */
+  margin-bottom: 2px;
+}
+.experience-header strong {
+  font-size: 14px; /* نفس حجم الخط للعناوين */
+}
+.experience-period {
+  font-size: 12px; /* حجم أصغر للفترة الزمنية */
+  color: #666;
+}
+.experience-location {
+  font-size: 12px; /* حجم أصغر للموقع */
+  color: #888;
+  margin-bottom: 5px;
+}
+
+/* قائمة الإنجازات (النقاط) */
+.achievements-list {
+  list-style-type: disc; /* أو circle لو عايز */
+  padding-left: 20px; /* مسافة للـ bullet points */
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+.achievements-list li {
+  font-size: 13px; /* حجم خط أصغر للنقاط */
+  margin-bottom: 3px; /* مسافة أقل بين النقاط */
+  line-height: 1.4;
+}
+
+/* المهارات */
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(200px, 1fr)
+  ); /* 2 أو 3 أعمدة حسب المساحة */
+  gap: 10px; /* مسافة أقل بين الأعمدة */
+}
+.skills-column h4 {
+  font-size: 14px; /* حجم خط أصغر لعناوين فئات المهارات */
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.skills-column ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.skills-column li {
+  font-size: 13px; /* حجم خط أصغر للمهارات الفردية */
+  margin-bottom: 3px;
+}
+
+/* اللغات */
+.languages-list div {
+  font-size: 13px; /* حجم خط أصغر للغات */
+  margin-bottom: 3px;
+}
+
+/* تنسيقات الطباعة الخاصة (مهمة جداً لـ PDF) */
+@media print {
+  body {
+    margin: 0;
+    padding: 0;
+    -webkit-print-color-adjust: exact; /* لضمان طباعة الألوان والخلفيات */
+    font-size: 12px; /* تقليل حجم الخط الأساسي للطباعة */
+  }
+  .app-container {
+    width: 100%;
+    padding: 0;
+  }
+  .cv-container {
+    width: 100%; /* اجعل الـ CV يملأ عرض الصفحة المطبوعة */
+    margin: 0;
+    padding: 10mm 15mm; /* تحديد هوامش الطباعة بالملمتر */
+    box-shadow: none; /* إزالة الظل في الـ PDF */
+    border: none; /* إزالة الحدود في الـ PDF */
+    min-height: auto; /* مهم لإتاحة تقسيم الصفحات تلقائيا */
+  }
+  .cv-section {
+    margin-bottom: 10px; /* تقليل المسافة بين الأقسام في الطباعة */
+    padding-bottom: 5px;
+  }
+  .cv-header h1 {
+    font-size: 24px;
+  }
+  .cv-header h2 {
+    font-size: 16px;
+  }
+  .contact-info span {
+    font-size: 12px;
+    margin-right: 10px;
+  }
+  .cv-section h3 {
+    font-size: 15px;
+    margin-top: 8px;
+    margin-bottom: 6px;
+    padding-bottom: 3px;
+  }
+  .cv-section p,
+  .achievements-list li,
+  .skills-column li,
+  .languages-list div {
+    font-size: 12px; /* حجم الخط أصغر لكل النصوص في الطباعة */
+    line-height: 1.3;
+  }
+  .experience-header,
+  .experience-header strong {
+    font-size: 13px;
+  }
+  .experience-period,
+  .experience-location {
+    font-size: 11px;
+  }
+
+  /* التحكم في تقسيم الصفحات */
+  .cv-section {
+    page-break-inside: avoid; /* منع الأقسام من الانقسام في منتصف الصفحة */
+  }
+  .experience-item {
+    page-break-inside: avoid; /* منع عناصر الخبرة من الانقسام */
+  }
+
+  /* إخفاء زر التحميل عند الطباعة */
+  .download-button-container {
+    display: none !important;
+  }
+}
