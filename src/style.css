@@ -288,3 +288,95 @@ body {
     margin-bottom: 5px;
   }
 }
+.export-buttons {
+  text-align: center;
+  margin: 20px 0;
+  padding: 20px;
+}
+
+.export-btn {
+  margin: 0 10px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.pdf-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.pdf-btn:hover {
+  background-color: #c82333;
+}
+
+.word-btn {
+  background-color: #2b579a;
+  color: white;
+}
+
+.word-btn:hover {
+  background-color: #1e3f73;
+}
+
+.export-btn i {
+  margin-right: 8px;
+}
+
+/* Hide export buttons when printing */
+@media print {
+  .export-buttons {
+    display: none;
+  }
+}
+/* Print styles for PDF export */
+@media print {
+  .export-buttons {
+    display: none !important;
+  }
+
+  .app-container {
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .cv-container {
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 15px !important;
+    box-shadow: none !important;
+    page-break-inside: avoid;
+  }
+
+  .cv-section {
+    page-break-inside: avoid;
+    margin-bottom: 15px !important;
+  }
+
+  .experience-item {
+    page-break-inside: avoid;
+    margin-bottom: 10px !important;
+  }
+
+  .cover-letter {
+    page-break-after: always;
+  }
+
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
+.html-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.html-btn:hover {
+  background-color: #218838;
+}
