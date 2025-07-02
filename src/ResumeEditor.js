@@ -83,7 +83,7 @@ const CV_Combined_ModerateExperience = () => {
   const cvData = {
     personalInfo: {
       name: "MOHAMED SAID ELNAHRAWY",
-      title: "Data Analyst | Accounting & Business Operations Professional",
+      title: "Data Analyst | Accounting & Business Operations",
       contact: {
         email: "n7rawy1984@gmail.com",
         phone: "+971 ________________ ",
