@@ -228,7 +228,7 @@ const CV_Combined_ModerateExperience = () => {
     },
     languages: [
       { language: "Arabic", proficiency: "Native" },
-      { language: "English", proficiency: "Fluent" },
+      { language: "English", proficiency: "Proficient" },
     ],
     coverLetter: coverLetterContent,
   };
