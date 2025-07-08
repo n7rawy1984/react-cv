@@ -6,8 +6,7 @@ const CV = () => {
   const cvData = {
     personalInfo: {
       name: "MOHAMED SAID ELNAHRAWY",
-      title:
-        "Part-Time Worker | Data Entry | Retail Assistant | Customer Service",
+      title: "Data Entry | Retail Assistant | Customer Service",
       contact: {
         email: "n7rawy1984@gmail.com",
         phone: "+971 _________________",
