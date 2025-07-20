@@ -272,7 +272,7 @@ body {
 
 /* Optional RTL override */
 .cover-letter-content {
-  direction: rtl;
-  text-align: right;
+  direction: ltr;
+  text-align: left;
   white-space: pre-line;
 }
