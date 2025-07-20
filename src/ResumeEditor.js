@@ -3,18 +3,44 @@ import "./style.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const CV = () => {
+  const coverLetterContent = `
+    Dear Hiring Manager,
+
+    I am pleased to submit my application for consideration. With over 15 years of hands-on experience in accounting, operations management, and logistics—and a growing skill set in digital tools and data analysis—I believe I can bring practical value and adaptability to your team.
+
+    Throughout my career, I have:
+    - Gained deep financial management experience with strong knowledge of GCC compliance
+    - Improved operational workflows and implemented cost-saving systems
+    - Embraced digital tools and social media for business visibility
+    - Worked fluently in both English and Arabic in multicultural environments
+
+    Some of my key contributions include:
+    - Improving efficiency by 30% through financial system upgrades
+    - Reducing inventory discrepancies by 45% with structured tracking
+    - Supporting small businesses in digital transformation and online marketing
+    - Increasing engagement on social media platforms by 20–35%
+
+    While my core expertise lies in accounting and logistics, I am currently expanding my capabilities into data analysis and web development. I enjoy learning and adapting, and I seek opportunities where I can contribute while growing in new areas.
+
+    I would welcome the opportunity to discuss how my experience and developing skills can support your team’s goals. Thank you for your time and consideration.
+
+    Sincerely,
+    MOHAMED ELNAHRAWY
+  `;
+
   const cvData = {
     personalInfo: {
-      name: "MOHAMED SAID ELNAHRAWY",
-      title: "Data Entry | Retail Assistant | Customer Service",
+      name: "MOHAMED SAEID ELNAHRAWY",
+      title:
+        "Accounting, Data Entry & Warehouse Support | Aspiring Web Developer & Data analyst",
       contact: {
         email: "n7rawy1984@gmail.com",
-        phone: "+971 _________________",
+        phone: "+971 588079593",
         location: "Dubai, UAE",
       },
     },
     summary:
-      "Reliable and adaptable individual with experience in retail assistance, data entry, and warehouse support. Fast learner with strong communication skills. Available for part-time or shift-based work. Fluent in Arabic and proficient in English.",
+      "Results-driven professional with 15+ years of experience in accounting, operations management, and logistics. Combines financial expertise with digital skills including AI tools and social media marketing. Bilingual in English and Arabic with proven ability to optimize processes and drive business improvements.",
     education: {
       degree: "Bachelor of Commerce (Accounting)",
       university: "Tanta University",
@@ -23,25 +49,67 @@ const CV = () => {
     experiences: [
       {
         id: 1,
-        role: "Sales Assistant & Inventory Clerk",
-        company: "Al Nahda Company",
-        period: "2022 - 2024",
+        role: "Freelance Accounting & Business Consultant",
+        company: "Self-Employed",
+        period: "2024 - Present",
         location: "Alexandria, Egypt",
         achievements: [
-          "Helped customers and managed stock",
-          "Organized products and maintained clean displays",
-          "Assisted with social media posts for promotions",
+          "Provided accounting services to Egyptian small and medium businesses",
+          "Developed financial reporting systems tailored to client needs",
+          "Implemented cost-saving measures averaging 15-20% reduction in operational costs",
+          "Offered business advisory services to improve financial processes",
         ],
       },
       {
         id: 2,
-        role: "Data Entry & Admin Assistant",
-        company: "Self-Employed (Freelance)",
-        period: "2021 - 2023",
-        location: "Remote",
+        role: "Online Sales Manager & Warehouse Manager",
+        company: "Al Nahda Company",
+        period: "2022 - 2024",
+        location: "Alexandria, Egypt",
         achievements: [
-          "Typed documents and entered data into Excel/Word",
-          "Helped students and small businesses with basic reports",
+          "Implemented inventory management system reducing stock discrepancies by 45%",
+          "Managed export documentation for international shipments",
+          "Coordinated with suppliers for timely deliveries",
+          "Developed social media marketing strategy increasing online sales by 35%",
+        ],
+      },
+      {
+        id: 4,
+        role: "Warehouse and Logistics Manager",
+        company: "Alexandria Port",
+        period: "2021 - 2022",
+        location: "Alexandria, Egypt",
+        achievements: [
+          "Supervised logistics operations for import/export activities",
+          "Implemented bilingual inventory tracking system",
+          "Reduced shipping delays by 35% through process optimization",
+          "Utilized data analysis tools for demand forecasting",
+        ],
+      },
+      {
+        id: 3,
+        role: "Personnel Affairs and Recruitment Officer",
+        company: "Al-Qafei Recruitment Company",
+        period: "2019 - 2020",
+        location: "Kingdom of Saudi Arabia",
+        achievements: [
+          "Managed recruitment processes for regional markets",
+          "Handled employee documentation compliant with labor laws",
+          "Coordinated visa processing for international positions",
+          "Implemented efficient candidate screening system",
+        ],
+      },
+      {
+        id: 5,
+        role: "Accountant & Store Keeper",
+        company: "Al-Helal Company for Medical Supplies",
+        period: "2016 - 2018",
+        location: "Alexandria, Egypt",
+        achievements: [
+          "Managed inventory for medical equipment",
+          "Implemented accounting system for regional compliance",
+          "Prepared financial reports meeting international standards",
+          "Managed company's digital presence and brand awareness",
         ],
       },
       {
@@ -58,23 +126,55 @@ const CV = () => {
         ],
       },
     ],
-    skills: [
-      "Data Entry (Excel, Word)",
-      "Retail Customer Service",
-      "Basic Inventory Management",
-      "Social Media Handling (Basic)",
-      "Fast Typing & Accuracy",
-      "Teamwork & Flexibility",
+    achievements: [
+      "Digital Transformation: Led migration to automated accounting systems for multiple companies",
+      "Process Optimization: Reduced monthly closing time by 40% through workflow improvements",
+      "AI Implementation: Successfully integrated AI tools for financial analysis and marketing",
+      "Social Media Growth: Increased engagement by 35% through targeted content strategy",
+      "Published Author: Recognized for literary work at Cairo International Book Fair",
     ],
+    skills: {
+      technical: [
+        "Financial Reporting & Analysis",
+        "Inventory Management",
+        "ERP Systems",
+        "Microsoft Dynamics",
+        "Data Analysis",
+        "ICDL Certified",
+      ],
+      management: [
+        "Operations Management",
+        "Team Leadership",
+        "Process Optimization",
+        "Vendor Relations",
+        "Cross-cultural Coordination",
+      ],
+      digital: [
+        "AI Tools & Automation",
+        "Social Media Marketing",
+        "Digital Advertising",
+        "Content Creation",
+        "Data Visualization",
+        "ChatGPT & AI Assistants",
+      ],
+      regional: [
+        "GCC Compliance",
+        "UAE VAT Regulations",
+        "Bilingual Documentation",
+        "International Standards",
+      ],
+    },
     languages: [
       { language: "Arabic", proficiency: "Native" },
-      { language: "English", proficiency: "Advanced" },
+      { language: "English", proficiency: "Fluent" },
     ],
+    coverLetter: coverLetterContent,
   };
 
   return (
     <div className="app-container">
       <div className="cv-container">
+        {/* Header Section */}
         <header className="cv-header">
           <h1>{cvData.personalInfo.name}</h1>
           <h2>{cvData.personalInfo.title}</h2>
@@ -94,11 +194,24 @@ const CV = () => {
           </div>
         </header>
 
+        {/* Cover Letter */}
+        <section className="cv-section cover-letter">
+          <h3>COVER LETTER</h3>
+          <div className="cover-letter-content">
+            {cvData.coverLetter.split("\n").map((paragraph, index) => (
+              <p key={index}>{paragraph}</p>
+            ))}
+          </div>
+        </section>
+        <div className="page-break"></div>
+
+        {/* Professional Summary */}
         <section className="cv-section">
           <h3>PROFESSIONAL SUMMARY</h3>
           <p>{cvData.summary}</p>
         </section>
 
+        {/* Education */}
         <section className="cv-section">
           <h3>EDUCATION</h3>
           <div className="education-item">
@@ -109,12 +222,15 @@ const CV = () => {
           </div>
         </section>
 
+        {/* Experience */}
         <section className="cv-section">
-          <h3>EXPERIENCE</h3>
+          <h3>PROFESSIONAL EXPERIENCE</h3>
           {cvData.experiences.map((exp) => (
             <div key={exp.id} className="experience-item">
               <div className="experience-header">
-                <strong>{exp.role}</strong> | {exp.company}
+                <div>
+                  <strong>{exp.role}</strong> | {exp.company}
+                </div>
                 <div className="experience-period">{exp.period}</div>
               </div>
               <div className="experience-location">
@@ -128,16 +244,58 @@ const CV = () => {
             </div>
           ))}
         </section>
+        <div className="page-break"></div>
 
+        {/* Key Achievements */}
         <section className="cv-section">
-          <h3>SKILLS</h3>
+          <h3>KEY ACHIEVEMENTS</h3>
           <ul className="achievements-list">
-            {cvData.skills.map((skill, index) => (
-              <li key={index}>{skill}</li>
+            {cvData.achievements.map((item, index) => (
+              <li key={index}>{item}</li>
             ))}
           </ul>
         </section>
 
+        {/* Skills */}
+        <section className="cv-section">
+          <h3>SKILLS & COMPETENCIES</h3>
+          <div className="skills-container">
+            <div className="skills-column">
+              <h4>Technical Skills</h4>
+              <ul>
+                {cvData.skills.technical.map((skill, i) => (
+                  <li key={i}>{skill}</li>
+                ))}
+              </ul>
+            </div>
+            <div className="skills-column">
+              <h4>Management Skills</h4>
+              <ul>
+                {cvData.skills.management.map((skill, i) => (
+                  <li key={i}>{skill}</li>
+                ))}
+              </ul>
+            </div>
+            <div className="skills-column">
+              <h4>Digital Skills</h4>
+              <ul>
+                {cvData.skills.digital.map((skill, i) => (
+                  <li key={i}>{skill}</li>
+                ))}
+              </ul>
+            </div>
+            <div className="skills-column">
+              <h4>Regional Expertise</h4>
+              <ul>
+                {cvData.skills.regional.map((skill, i) => (
+                  <li key={i}>{skill}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        {/* Languages */}
         <section className="cv-section">
           <h3>LANGUAGES</h3>
           <div className="languages-list">

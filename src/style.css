@@ -252,6 +252,7 @@ body {
     padding: 20px !important;
     margin: 0 !important;
     width: 100% !important;
+    max-height: initial !important;
   }
 
   .cv-section {
@@ -262,7 +263,14 @@ body {
   .contact-info span {
     margin-bottom: 5px;
   }
+
+  .page-break {
+    page-break-after: always;
+    break-after: page;
+  }
 }
+
+/* Optional RTL override */
 .cover-letter-content {
   direction: rtl;
   text-align: right;
